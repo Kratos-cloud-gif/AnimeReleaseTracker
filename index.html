@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anime Episode Countdown</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="light">
+  <video autoplay muted loop id="bg-video">
+    <source src="room.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Anime Release Tracker</h1>
+    <div class="controls">
+      <button id="play-sound">▶ Play Sound</button>
+      <button id="toggle-sound">🔇 Mute</button>
+      <button id="toggle-theme">🌙 Theme</button>
+    </div>
+    <div id="anime-container"></div>
+  </div>
+
+  <audio id="rain-sound" src="rain.mp3" loop></audio>
+  <audio id="lofi-sound" src="lofi.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
