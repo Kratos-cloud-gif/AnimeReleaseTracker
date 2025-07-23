@@ -130,3 +130,44 @@ body.dark #toggle-theme,
 body.dark #play-sound {
   background: rgba(255, 255, 255, 0.15);
 }
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .content {
+    padding: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  #anime-container {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .anime-card {
+    width: 90%;              /* Full width on phones */
+    max-width: 320px;         /* Don’t get too huge on tablets */
+    padding: 0.8rem;
+  }
+
+  .anime-image {
+    max-height: 120px;        /* Slightly smaller images */
+    padding: 4px;
+  }
+
+  .anime-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .anime-card p {
+    font-size: 0.9rem;
+  }
+
+  /* Buttons shrink a bit too */
+  #toggle-sound,
+  #toggle-theme,
+  #play-sound {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    margin: 0 0.3rem;
+  }
+}
+
